@@ -147,7 +147,7 @@ def getname(uid):
     pi=r.get(url,headers=hd)
     bp=bs(pi.content,"html.parser")
     name=bp.find("title").text.split("|")[0].strip()
-    if "Content not found" not in name and "Log in to Facebook" not in name:
+    if "Content not found" not in name and "5757@@" not in name:
         n+=1
         
         
