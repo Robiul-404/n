@@ -151,8 +151,8 @@ def getname(uid):
         n+=1
         
         
-        print(f"\033[1;92m[XIVE-OK] {uid} | {name}")
-        open(file,"a").write(uid+" | "+name+"\n")
+        print(f"{red}[XIVE-OK{red}]{green} {uid} | {name}")
+        open(file,"a").write("{R}[{W}XIVE-OK{R}] {G}"+ uid+" {R}|{G} "+name+"\n")
     #else:
       #  print(f"\033[1;34m[AUTO-DUMP-SUCCESFULL]\033[1;32m{uid} • {name}")
     
